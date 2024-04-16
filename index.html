@@ -4,6 +4,7 @@
 <head>
     <title>Tax Calculator</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/1d176c0d0a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,22 +13,27 @@
 
         <label for="income">Enter Gross Annual Income (₹):</label>
         <input type="text" id="income" name="income" oninput="validate(this)">
-        <span id="income-error" class="error-icon" title="Invalid input"></span>
+        <span id="income-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span>
         <br>
 
         <label for="extra-income">Enter Extra Income (₹):</label>
         <input type="text" id="extra-income" name="extra-income" oninput="validate(this)">
-        <span id="extra-income-error" class="error-icon" title="Invalid input"></span>
+        <span id="extra-income-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span>
         <br>
 
         <label for="deductions">Enter Total Applicable Deductions (₹):</label>
         <input type="text" id="deductions" name="deductions" oninput="validate(this)">
-        <span id="deductions-error" class="error-icon" title="Invalid input"></span>
+        <span id="deductions-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span>
         <br>
 
         <label for="age">Age:</label>
-        <input type="text" id="age" name="age" oninput="validate(this)">
-        <span id="age-error" class="error-icon" title="Invalid input"></span>
+        <select id="age" name="age">
+            <option value="<40">< 40</option>
+            <option value="40-60">40 ≤ age < 60</option>
+            <option value="≥60">≥ 60</option>
+        </select>
+        <!-- <input type="text" id="age" name="age" oninput="validate(this)" required> -->
+        <!-- <span id="age-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span> -->
         <br>
 
         <button id="calculate-button">Calculate Tax</button>
