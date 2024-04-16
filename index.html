@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <h1>Tax Calculator</h1>
+
+        <label for="income">Enter Gross Annual Income (₹):</label>
+        <input type="text" id="income" name="income" oninput="validate(this)">
+        <span id="income-error" class="error-icon" title="Invalid input"></span>
+        <br>
+
+        <label for="extra-income">Enter Extra Income (₹):</label>
+        <input type="text" id="extra-income" name="extra-income" oninput="validate(this)">
+        <span id="extra-income-error" class="error-icon" title="Invalid input"></span>
+        <br>
+
+        <label for="deductions">Enter Total Applicable Deductions (₹):</label>
+        <input type="text" id="deductions" name="deductions" oninput="validate(this)">
+        <span id="deductions-error" class="error-icon" title="Invalid input"></span>
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" oninput="validate(this)">
+        <span id="age-error" class="error-icon" title="Invalid input"></span>
+        <br>
+
+        <button id="calculate-button">Calculate Tax</button>
+
+        <h2 id="tax-amount">Tax Amount: ₹0.00</h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

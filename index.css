@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1521828847175-b6d80fc5a7fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#calculator {
+    width: 400px;
+    padding: 20px;
+    margin: 60px auto;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(18px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Styles */
+input, select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #007BFF;
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Icon Styles */
+.error-icon {
+    display: none;
+    color: red;
+    font-size: 20px;
+    margin-left: 5px;
+    position: relative; 
+}
+
+/* Tooltip Styles */
+.error-icon::after {
+    content: "!";
+    position: absolute;
+    background-color: #fe4e41;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    top: -3.8rem;
+    left: 11.8rem;
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.error-icon:hover::after {
+    display: block;
+}
+
+/* Tax Amount Styles */
+#tax-amount {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
