@@ -12,17 +12,17 @@
         <h1>Tax Calculator</h1>
 
         <label for="income">Enter Gross Annual Income (₹):</label>
-        <input type="text" id="income" name="income" oninput="validate(this)">
+        <input type="text" id="income" name="income" placeholder="Enter Gross Annual Income in Lakhs" oninput="validate(this)">
         <span id="income-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span>
         <br>
 
         <label for="extra-income">Enter Extra Income (₹):</label>
-        <input type="text" id="extra-income" name="extra-income" oninput="validate(this)">
+        <input type="text" id="extra-income" name="extra-income" placeholder="Enter Extra Income from other resources in Lakhs" oninput="validate(this)">
         <span id="extra-income-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span>
         <br>
 
         <label for="deductions">Enter Total Applicable Deductions (₹):</label>
-        <input type="text" id="deductions" name="deductions" oninput="validate(this)">
+        <input type="text" id="deductions" name="deductions" placeholder="Add total applicable deductions in Lakhs" oninput="validate(this)">
         <span id="deductions-error" class="error-icon" title="Invalid input"><i class="fa-solid fa-circle-exclamation"></i></span>
         <br>
 
@@ -38,7 +38,7 @@
 
         <button id="calculate-button">Calculate Tax</button>
 
-        <h2 id="tax-amount">Tax Amount: ₹0.00</h2>
+        <h2 id="tax-amount">Tax Amount: ₹0.00 Lakh</h2>
     </div>
 
     <script src="index.js"></script>

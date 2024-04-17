@@ -57,7 +57,7 @@ document.getElementById("calculate-button").addEventListener("click", function()
     }
     
     // Display the calculated tax amount
-    document.getElementById("tax-amount").textContent = `Tax Amount: ₹${taxAmount.toFixed(2)}`;
+    document.getElementById("tax-amount").textContent = `Tax Amount: ₹${taxAmount.toFixed(2)} Lakhs`;
 });
 
 

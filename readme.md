@@ -21,9 +21,23 @@ This project consists of a website where users can input their gross annual inco
 
 ## Screenshots
 
+Project Preview
+
+![1](https://github.com/Sam23599/Tax-Calculator/assets/61102596/82a494ad-ca18-4dc7-b3cb-f325f1d534d6)
+![2](https://github.com/Sam23599/Tax-Calculator/assets/61102596/9913afc6-28f8-41a5-8cb5-bcd155635421)
+
+Tax calculation preview
+
+![3](https://github.com/Sam23599/Tax-Calculator/assets/61102596/b3a33145-5e12-45c6-8b7f-feb3c9f065c5)
+![4](https://github.com/Sam23599/Tax-Calculator/assets/61102596/519bceb8-35fd-4963-bc15-a6e4da8ba5a9)
+
+Error Preview
+
+![5](https://github.com/Sam23599/Tax-Calculator/assets/61102596/fadd7766-7a29-427f-b287-304f8eba7df3)
+![6](https://github.com/Sam23599/Tax-Calculator/assets/61102596/8d304531-f9ba-48cc-a81e-2ba3a1587488)
 
 
-![Screenshot of Tests Passing](tests_passing_screenshot.png)
+<!-- ![Screenshot of Tests Passing](tests_passing_screenshot.png) -->
 
 The above screenshot shows all tests passing within the project.
 
